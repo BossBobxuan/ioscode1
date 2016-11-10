@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9hM-NP-he8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Flag Quiz-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="quizViewController" customModule="quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess the Country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ngO-cS-0xN">
+                                <rect key="frame" x="16" y="72" width="288" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1 of 10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vH-hO-kfS">
+                                <rect key="frame" x="16" y="230" width="288" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IWf-1G-zSY">
+                                <rect key="frame" x="16" y="421" width="288" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Xhf-BS-PLv">
+                                <rect key="frame" x="16" y="277" width="288" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="submitGuess:" destination="BYZ-38-t0r" eventType="valueChanged" id="A4J-dJ-eyW"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="aHM-zf-pYC">
+                                <rect key="frame" x="16" y="313" width="288" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="submitGuess:" destination="BYZ-38-t0r" eventType="valueChanged" id="hpe-8l-nLu"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Imu-Ft-9Mc">
+                                <rect key="frame" x="16" y="349" width="288" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="submitGuess:" destination="BYZ-38-t0r" eventType="valueChanged" id="v1E-Zq-142"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="BEC-op-RNr">
+                                <rect key="frame" x="16" y="385" width="288" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="submitGuess:" destination="BYZ-38-t0r" eventType="valueChanged" id="Qad-4d-Dua"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kgV-R4-fbd">
+                                <rect key="frame" x="16" y="119" width="288" height="103"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6vH-hO-kfS" firstAttribute="top" secondItem="kgV-R4-fbd" secondAttribute="bottom" constant="8" symbolic="YES" id="08m-cz-R1v"/>
+                            <constraint firstItem="Xhf-BS-PLv" firstAttribute="top" secondItem="6vH-hO-kfS" secondAttribute="bottom" constant="8" symbolic="YES" id="6MU-G0-So1"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="IWf-1G-zSY" secondAttribute="leading" id="6jg-xz-EUP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xhf-BS-PLv" secondAttribute="trailing" id="CKO-4B-zhe"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="kgV-R4-fbd" secondAttribute="leading" id="Cu7-ZS-NBR"/>
+                            <constraint firstItem="IWf-1G-zSY" firstAttribute="top" secondItem="BEC-op-RNr" secondAttribute="bottom" constant="8" symbolic="YES" id="E5u-oc-m1S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IWf-1G-zSY" secondAttribute="trailing" id="M7z-Ta-CUW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BEC-op-RNr" secondAttribute="trailing" id="VeG-v2-q6c"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="BEC-op-RNr" secondAttribute="leading" id="Yzi-di-Xes"/>
+                            <constraint firstItem="kgV-R4-fbd" firstAttribute="top" secondItem="ngO-cS-0xN" secondAttribute="bottom" constant="8" symbolic="YES" id="a6M-DD-XqO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Imu-Ft-9Mc" secondAttribute="trailing" id="b77-Jc-pik"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aHM-zf-pYC" secondAttribute="trailing" id="cs0-lp-U9M"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6vH-hO-kfS" secondAttribute="trailing" id="fAL-9n-F5k"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="aHM-zf-pYC" secondAttribute="leading" id="ftn-cN-RNC"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Imu-Ft-9Mc" secondAttribute="leading" id="gAn-ch-jd1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ngO-cS-0xN" secondAttribute="trailing" id="h0d-bv-xkJ"/>
+                            <constraint firstItem="aHM-zf-pYC" firstAttribute="top" secondItem="Xhf-BS-PLv" secondAttribute="bottom" constant="8" symbolic="YES" id="h9S-zs-1rX"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="6vH-hO-kfS" secondAttribute="leading" id="kR3-Dk-eeI"/>
+                            <constraint firstItem="Imu-Ft-9Mc" firstAttribute="top" secondItem="aHM-zf-pYC" secondAttribute="bottom" constant="8" symbolic="YES" id="qC4-Dm-t2a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kgV-R4-fbd" secondAttribute="trailing" id="sow-87-pdb"/>
+                            <constraint firstItem="BEC-op-RNr" firstAttribute="top" secondItem="Imu-Ft-9Mc" secondAttribute="bottom" constant="8" symbolic="YES" id="tu0-lc-W1O"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IWf-1G-zSY" secondAttribute="bottom" constant="8" symbolic="YES" id="uKt-jx-417"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Xhf-BS-PLv" secondAttribute="leading" id="x0x-hG-YiT"/>
+                            <constraint firstItem="ngO-cS-0xN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="xjO-Zt-I2q"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ngO-cS-0xN" secondAttribute="leading" id="ylC-Vb-bQX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Flag Quiz" id="iNm-bK-QWE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="kp3-yX-7xn">
+                            <connections>
+                                <segue destination="8gt-bP-yKN" kind="show" identifier="showSettings" id="3LM-Cq-Opf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="AnswerLabel" destination="IWf-1G-zSY" id="ASw-gs-B2J"/>
+                        <outlet property="QuestionLabel" destination="6vH-hO-kfS" id="CAd-sF-GXr"/>
+                        <outlet property="flagimage" destination="kgV-R4-fbd" id="lam-k0-das"/>
+                        <outletCollection property="segmentdController" destination="Xhf-BS-PLv" collectionClass="NSMutableArray" id="q45-xU-WtR"/>
+                        <outletCollection property="segmentdController" destination="aHM-zf-pYC" collectionClass="NSMutableArray" id="RND-BB-KTo"/>
+                        <outletCollection property="segmentdController" destination="Imu-Ft-9Mc" collectionClass="NSMutableArray" id="nKe-Et-F2C"/>
+                        <outletCollection property="segmentdController" destination="BEC-op-RNr" collectionClass="NSMutableArray" id="ihT-Gd-nVu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513" y="399"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="eEf-O8-SkJ">
+            <objects>
+                <viewController id="8gt-bP-yKN" customClass="settingsViewController" customModule="quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VmH-BM-4VO"/>
+                        <viewControllerLayoutGuide type="bottom" id="VyV-q3-nV9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="adZ-uj-dNL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of guesses per flag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNd-Fh-o7d">
+                                <rect key="frame" x="16" y="72" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="W7W-eE-eyp">
+                                <rect key="frame" x="16" y="101" width="288" height="29"/>
+                                <segments>
+                                    <segment title="2"/>
+                                    <segment title="4"/>
+                                    <segment title="6"/>
+                                    <segment title="8"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentchage:" destination="8gt-bP-yKN" eventType="valueChanged" id="LZX-sc-XWr"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regions to include in the quiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvT-pw-0nf">
+                                <rect key="frame" x="16" y="159" width="288" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Africa" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oua-7y-ckq">
+                                <rect key="frame" x="12" y="196" width="173" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asia" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVn-TF-RIW">
+                                <rect key="frame" x="12" y="235" width="173" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Europe" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDh-e8-5dz">
+                                <rect key="frame" x="12" y="274" width="173" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="North America" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ok9-bk-217">
+                                <rect key="frame" x="12" y="313" width="173" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oceania" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUm-mL-BI2">
+                                <rect key="frame" x="12" y="352" width="173" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B1J-3t-rAI">
+                                <rect key="frame" x="199" y="191" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchchange:" destination="8gt-bP-yKN" eventType="valueChanged" id="40K-Z4-yu0"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="omJ-7s-NQ3">
+                                <rect key="frame" x="199" y="230" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchchange:" destination="8gt-bP-yKN" eventType="valueChanged" id="aRy-An-N9H"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mNo-S2-kUg">
+                                <rect key="frame" x="199" y="269" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchchange:" destination="8gt-bP-yKN" eventType="valueChanged" id="f7Z-aT-1by"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LT5-ii-q0g">
+                                <rect key="frame" x="199" y="308" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchchange:" destination="8gt-bP-yKN" eventType="valueChanged" id="vt7-aB-OVt"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L2b-oi-xVC">
+                                <rect key="frame" x="199" y="347" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchchange:" destination="8gt-bP-yKN" eventType="valueChanged" id="b53-Sc-UuY"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vjk-Nl-UBM">
+                                <rect key="frame" x="199" y="386" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchchange:" destination="8gt-bP-yKN" eventType="valueChanged" id="W9U-Yv-41g"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="South America" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de1-9k-eq9">
+                                <rect key="frame" x="12" y="391" width="173" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="omJ-7s-NQ3" firstAttribute="leading" secondItem="ZVn-TF-RIW" secondAttribute="trailing" constant="14" id="6Xl-ea-Fqp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YNd-Fh-o7d" secondAttribute="trailing" id="73i-zY-uyY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W7W-eE-eyp" secondAttribute="trailing" id="75H-dc-ljP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vjk-Nl-UBM" secondAttribute="trailing" constant="56" id="9oC-LU-aoX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L2b-oi-xVC" secondAttribute="trailing" constant="56" id="A4X-Vm-eRw"/>
+                            <constraint firstItem="bUm-mL-BI2" firstAttribute="centerY" secondItem="L2b-oi-xVC" secondAttribute="centerY" id="D2w-Oi-i8q"/>
+                            <constraint firstItem="vjk-Nl-UBM" firstAttribute="top" secondItem="L2b-oi-xVC" secondAttribute="bottom" constant="8" symbolic="YES" id="FCg-0w-2Yi"/>
+                            <constraint firstItem="ZVn-TF-RIW" firstAttribute="leading" secondItem="adZ-uj-dNL" secondAttribute="leadingMargin" constant="-4" id="Fbh-BK-dAp"/>
+                            <constraint firstItem="omJ-7s-NQ3" firstAttribute="top" secondItem="B1J-3t-rAI" secondAttribute="bottom" constant="8" symbolic="YES" id="Hpl-1l-sQZ"/>
+                            <constraint firstItem="Ok9-bk-217" firstAttribute="leading" secondItem="adZ-uj-dNL" secondAttribute="leadingMargin" constant="-4" id="I2v-QL-jik"/>
+                            <constraint firstItem="Ok9-bk-217" firstAttribute="centerY" secondItem="LT5-ii-q0g" secondAttribute="centerY" id="Idv-1M-0Wr"/>
+                            <constraint firstItem="ZVn-TF-RIW" firstAttribute="centerY" secondItem="omJ-7s-NQ3" secondAttribute="centerY" id="KX6-yL-XZu"/>
+                            <constraint firstItem="vjk-Nl-UBM" firstAttribute="leading" secondItem="de1-9k-eq9" secondAttribute="trailing" constant="14" id="KfQ-65-RUp"/>
+                            <constraint firstItem="L2b-oi-xVC" firstAttribute="leading" secondItem="bUm-mL-BI2" secondAttribute="trailing" constant="14" id="NK4-1p-WR7"/>
+                            <constraint firstItem="W7W-eE-eyp" firstAttribute="top" secondItem="YNd-Fh-o7d" secondAttribute="bottom" constant="8" id="NlE-tB-De0"/>
+                            <constraint firstItem="LvT-pw-0nf" firstAttribute="top" secondItem="W7W-eE-eyp" secondAttribute="bottom" constant="30" id="PPj-i7-tqo"/>
+                            <constraint firstItem="LT5-ii-q0g" firstAttribute="top" secondItem="mNo-S2-kUg" secondAttribute="bottom" constant="8" symbolic="YES" id="PiV-ZT-iqH"/>
+                            <constraint firstItem="de1-9k-eq9" firstAttribute="centerY" secondItem="vjk-Nl-UBM" secondAttribute="centerY" id="Q62-i8-kqG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B1J-3t-rAI" secondAttribute="trailing" constant="56" id="TQ3-aJ-1bi"/>
+                            <constraint firstItem="LT5-ii-q0g" firstAttribute="leading" secondItem="Ok9-bk-217" secondAttribute="trailing" constant="14" id="VL7-TK-Cmi"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="YNd-Fh-o7d" secondAttribute="leading" id="e7g-Tm-Eky"/>
+                            <constraint firstItem="B1J-3t-rAI" firstAttribute="top" secondItem="LvT-pw-0nf" secondAttribute="bottom" constant="8" symbolic="YES" id="etI-q8-Uvp"/>
+                            <constraint firstItem="B1J-3t-rAI" firstAttribute="leading" secondItem="Oua-7y-ckq" secondAttribute="trailing" constant="14" id="hga-n7-6Fd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mNo-S2-kUg" secondAttribute="trailing" constant="56" id="hiy-C6-eUD"/>
+                            <constraint firstItem="mNo-S2-kUg" firstAttribute="top" secondItem="omJ-7s-NQ3" secondAttribute="bottom" constant="8" symbolic="YES" id="jo1-SE-lnd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LvT-pw-0nf" secondAttribute="trailing" id="l5U-g9-g3T"/>
+                            <constraint firstItem="Oua-7y-ckq" firstAttribute="leading" secondItem="adZ-uj-dNL" secondAttribute="leadingMargin" constant="-4" id="lut-ob-XHq"/>
+                            <constraint firstItem="bUm-mL-BI2" firstAttribute="leading" secondItem="adZ-uj-dNL" secondAttribute="leadingMargin" constant="-4" id="ogj-w2-Jst"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="LvT-pw-0nf" secondAttribute="leading" id="pRA-c1-9lI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="omJ-7s-NQ3" secondAttribute="trailing" constant="56" id="qEN-4D-Gun"/>
+                            <constraint firstItem="wDh-e8-5dz" firstAttribute="centerY" secondItem="mNo-S2-kUg" secondAttribute="centerY" id="qWn-dm-UGL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LT5-ii-q0g" secondAttribute="trailing" constant="56" id="qXS-84-dZi"/>
+                            <constraint firstItem="Oua-7y-ckq" firstAttribute="centerY" secondItem="B1J-3t-rAI" secondAttribute="centerY" id="rZu-Kl-bTF"/>
+                            <constraint firstItem="wDh-e8-5dz" firstAttribute="leading" secondItem="adZ-uj-dNL" secondAttribute="leadingMargin" constant="-4" id="rzc-kL-vSY"/>
+                            <constraint firstItem="de1-9k-eq9" firstAttribute="leading" secondItem="adZ-uj-dNL" secondAttribute="leadingMargin" constant="-4" id="sFh-ge-5pH"/>
+                            <constraint firstItem="mNo-S2-kUg" firstAttribute="leading" secondItem="wDh-e8-5dz" secondAttribute="trailing" constant="14" id="uPH-Xk-OIc"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="W7W-eE-eyp" secondAttribute="leading" id="x9m-Ce-gPt"/>
+                            <constraint firstItem="YNd-Fh-o7d" firstAttribute="top" secondItem="VmH-BM-4VO" secondAttribute="bottom" constant="8" id="xxi-ww-8pL"/>
+                            <constraint firstItem="L2b-oi-xVC" firstAttribute="top" secondItem="LT5-ii-q0g" secondAttribute="bottom" constant="8" symbolic="YES" id="zqz-3f-r5F"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="hbM-CE-1FW"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outletCollection property="Swich" destination="B1J-3t-rAI" collectionClass="NSMutableArray" id="n7b-Vf-d8Y"/>
+                        <outletCollection property="Swich" destination="omJ-7s-NQ3" collectionClass="NSMutableArray" id="kHZ-Xo-m0D"/>
+                        <outletCollection property="Swich" destination="mNo-S2-kUg" collectionClass="NSMutableArray" id="sSq-El-dNU"/>
+                        <outletCollection property="Swich" destination="LT5-ii-q0g" collectionClass="NSMutableArray" id="1dn-4A-4n3"/>
+                        <outletCollection property="Swich" destination="L2b-oi-xVC" collectionClass="NSMutableArray" id="eW7-77-yet"/>
+                        <outletCollection property="Swich" destination="vjk-Nl-UBM" collectionClass="NSMutableArray" id="3p6-CN-Pxt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OUu-ST-fVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="923" y="399"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Pq-rn-DPY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9hM-NP-he8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="erR-MV-Wso">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xRm-Uy-2Qc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uSw-PN-7G0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121" y="399"/>
+        </scene>
+    </scenes>
+</document>
